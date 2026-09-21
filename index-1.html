@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant" data-vol="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOYOMAN 第四度空間的歷史</title>
+<meta name="description" content="高中歷史五冊互動學習網：重點整理、時間軸、關鍵詞卡與練習題。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700;800&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-chap="">
+<header class="topbar"><div class="wrap row">
+  <a class="brand" href="index.html"><span class="mark"></span><b>第四度空間的歷史</b><span>YOYOMAN</span></a>
+  <nav class="nav"><a href="index.html" class="on">首頁</a><a href="vol1.html">第一冊</a><a href="vol2.html">第二冊</a><a href="vol3.html">第三冊</a><a href="vol4.html">選修科技</a><a href="vol5.html">探究實作</a><a href="timeline.html">大時間軸</a><a href="glossary.html">關鍵詞庫</a><a href="quiz.html">綜合測驗</a><a href="files.html">資料索引</a></nav>
+  <div class="tools">
+    <button class="iconbtn" id="fontDown" title="縮小字級">A－</button>
+    <button class="iconbtn" id="fontUp" title="放大字級">A＋</button>
+    <button class="iconbtn" id="themeBtn" title="切換深色／淺色">☀</button>
+  </div>
+</div></header>
+<main>
+<section class="wrap hero">
+  <div class="eyebrow">楊梅高中歷史教學網</div>
+  <h1>YOYOMAN<br>第四度空間的歷史</h1>
+  <p class="lede">時間是第四個維度。這個網站把高中歷史五冊的脈絡攤開成一張可以走進去的地圖——
+  每一章都有重點整理、年代時間軸、關鍵詞卡片與互動練習題，手機、電腦、教室投影都能用。</p>
+</section>
+
+<section class="wrap section">
+  <div class="searchbox"><input id="q" type="search" placeholder="搜尋章節、關鍵詞、年代…　例如：文藝復興、冷戰、原住民、史料"></div>
+  <div class="sresults" id="sresults"></div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head"><h2>五冊導覽</h2><span class="note">點進去看章節</span></div>
+  <div class="grid g2"><a class="volcard" href="vol1.html" style="--vc:var(--jade)">
+  <div class="vnum">高一上</div>
+  <h3>第一冊　臺灣史</h3>
+  <p>從八仙洞的火堆，到你手上這支手機裡的島嶼</p>
+  <div class="meta"><span class="pill">7 章</span>
+    <span class="pill">114 題練習</span>
+    <span class="pill">南一版</span></div>
+</a><a class="volcard" href="vol2.html" style="--vc:var(--vermilion)">
+  <div class="vnum">高一下</div>
+  <h3>第二冊　中國與東亞史</h3>
+  <p>把中國放回東亞：一千八百年的互看、互學與互鬥</p>
+  <div class="meta"><span class="pill">7 章</span>
+    <span class="pill">118 題練習</span>
+    <span class="pill">南一版</span></div>
+</a><a class="volcard" href="vol3.html" style="--vc:var(--indigo)">
+  <div class="vnum">高二上（115-1）</div>
+  <h3>第三冊　世界史</h3>
+  <p>從希臘神殿的列柱，到你手機裡的全球化</p>
+  <div class="meta"><span class="pill">6 章</span>
+    <span class="pill">94 題練習</span>
+    <span class="pill">泰宇版、南一版、龍騰版</span></div>
+</a><a class="volcard" href="vol4.html" style="--vc:var(--teal)">
+  <div class="vnum">高三加深加廣選修</div>
+  <h3>選修　科技、環境與藝術的歷史</h3>
+  <p>從一顆退燒藥、一片晶片到一杯珍奶，日常裡藏著的世界史</p>
+  <div class="meta"><span class="pill">6 章</span>
+    <span class="pill">96 題練習</span>
+    <span class="pill">南一版</span></div>
+</a><a class="volcard" href="vol5.html" style="--vc:var(--plum)">
+  <div class="vnum">高三加深加廣選修（114-2　202 班）</div>
+  <h3>選修歷史Ⅲ　歷史學探究與實作</h3>
+  <p>不是讀別人寫的歷史，是自己動手寫一次</p>
+  <div class="meta"><span class="pill">7 章</span>
+    <span class="pill">81 題練習</span>
+    <span class="pill">南一版</span></div>
+</a></div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head"><h2>這個網站有什麼</h2></div>
+  <div class="stat">
+    <div class="s"><div class="n">33</div><div class="l">章互動頁面</div></div>
+    <div class="s"><div class="n">503</div><div class="l">道練習題（含詳解）</div></div>
+    <div class="s"><div class="n">404</div><div class="l">張關鍵詞卡</div></div>
+    <div class="s"><div class="n">542</div><div class="l">個時間軸節點</div></div>
+    <div class="s"><div class="n" id="doneCount">0</div><div class="l">你已完成的章節</div></div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head"><h2>怎麼用</h2></div>
+  <div class="grid g3">
+    <div class="card" style="padding:18px"><h3>學生：複習與自測</h3>
+      <p style="color:var(--ink-2);margin:0;font-size:.93em">先看「本章重點」，再用關鍵詞卡自我檢查，最後做練習題。
+      答完按「批改」會出現詳解，分數會記在你自己的裝置上。</p></div>
+    <div class="card" style="padding:18px"><h3>老師：上課投影</h3>
+      <p style="color:var(--ink-2);margin:0;font-size:.93em">重點區塊可以逐段展開，適合邊講邊開。
+      右上角可放大字級、切換深色，教室投影機看得清楚。每章附原始課本與 PPT 的資料夾位置。</p></div>
+    <div class="card" style="padding:18px"><h3>手機：裝成 APP</h3>
+      <p style="color:var(--ink-2);margin:0;font-size:.93em">另有一份學生版 APP，可以加到手機主畫面離線使用，
+      還能做筆記、劃重點、追蹤進度與錯題。</p></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap row">
+  <div><b>YOYOMAN 第四度空間的歷史</b><br>楊梅高中歷史教學網　│　何友友 YOYOMAN 老師</div>
+  <div style="margin-left:auto;text-align:right">
+    課文重點與練習題為本站自行編寫；<br>各版本課本、講義原始檔請見「資料索引」所列資料夾。
+  </div>
+</div></footer>
+<script src="assets/index.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
